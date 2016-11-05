@@ -1,0 +1,40 @@
+<p style="line-height: 18px; font-size: 18px;  font-family: times;">
+Click "<i>Load samples</i>" to view and edit more JS samples.<br>
+<br>
+Labyrinth generated with JavaScript:<br><br>
+<script>
+var HexChars = ["0", "1", "2", "3","4", "5", "6", "7","8", "9", "a", "b","c", "d", "e", "f"];
+var x;
+var y;
+var z = "#";
+
+
+//for (x = 0; x < HexChars.length ; x++){
+//	document.writeln(HexChars[x]);
+//    document.write("<br>");
+//
+//}
+//document.writeln(HexChars.length + "<br>"); //Max length of array
+//document.writeln(Math.floor(Math.random() * HexChars.length) + "<br>"); //Print random number in array.
+
+function recolor()
+{
+	for (x = 0; x <= 5 ; x++)
+		{
+		y = Math.floor(Math.random() * HexChars.length);
+		z = z + HexChars[y];
+		//document.write(HexChars[y]);
+		console.log(z);
+	}
+	document.body.style.backgroundColor = z;
+	//document.write("<br>" + z);
+	//console.log(z);
+}
+//document.write("<br>" + HexChars);
+
+recolor();
+
+
+
+</script>
+</p>
